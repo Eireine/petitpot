@@ -7,26 +7,23 @@
 img {
     width: 200px;
     height: 200px;
-    box-shadow : 0px 4px 4px #ccc; /* 10px 4px 4px rgba (0,0,0,0.25);*/
+    box-shadow : 0px 4px 4px #E3E3E2;
 }
 
 #tag {
-    width: 150px;
-    height : 26px;
-    background-color: #B2BDBD;
-    border-radius : 3px;
-    padding-left: 6px;
-    position : absolute;
-    top : 195px;
-    left: 25px;
-}
-
-#tag, p  {
-    font-family: 'Patrick Hand';
     font-size: 16px;
     letter-spacing: 0.1em;
+    line-height: 25px;
+    border-radius: 3px;
+    height : 25px;
+    width: 150px;
+    left: 27px;
+    margin-top: 190px;
+    padding-left: 10px;
     color: #FFFFFF;
-    line-height: 22px;
+    background-color: #1C475E;
+    font-family: 'Patrick Hand';
+    position : absolute; 
 }
 
 /* Side-right */ 
@@ -36,11 +33,25 @@ img {
     width : 150px;
     height: 150px;
     padding: 24px;
+    opacity: 1;
+    transition: .5s ease; /*transition vers le side-right:hover*/
 }
 
 #side-right:hover {
+    opacity: 1;
     background-color: #8FB3BE;
-    opacity: 0.5; /*todo : gérer opacity uniquement sur le fond*/
+}
+
+#side-right:hover #title {
+    opacity: 0.5;
+}
+
+#side-right:hover #date {
+    opacity: 0.5;
+}
+
+#side-right:hover #description {
+    opacity: 0.5;
 }
 
 #title {
@@ -67,7 +78,7 @@ img {
 }
 
 #link { /*todo : doit s'afficher devant le composant*/
-    width: 130px;
+    width: 150px;
     height : 25px;
     background-color: white;
     position : absolute;
@@ -75,9 +86,12 @@ img {
 }
 
 #link a {
-    width: 130px;
     font-family: 'Patrick Hand';
-    color: red;
+    width: 150px;
+    color: #535857;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
 }
 
 #side-right #link {
@@ -85,5 +99,5 @@ img {
 }
 
 #side-right:hover #link {
-    display : flex; 
+    display : flex;
 }

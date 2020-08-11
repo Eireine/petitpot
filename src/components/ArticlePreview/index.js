@@ -7,8 +7,8 @@ function ArticlePreview(props) {
         <React.Fragment>
             <div id="basicArticle">
                 <div id="side-left">
-                    <img src={props.image}></img>
                     <div id="tag">{props.tag}</div>
+                    <img src={props.image}></img>
                 </div>
 
                 <div id="side-right">
