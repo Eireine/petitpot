@@ -4,24 +4,19 @@ import './ArticlePreview.css'
 
 function ArticlePreview(props) {
     return (
-        <React.Fragment>
-            <div id="basicArticle">
-                <div id="side-left">
-                    <div id="tag">{props.tag}</div>
-                    <img src={props.image}></img>
-                </div>
-
-                <div id="side-right">
-                    <div id="title">{props.title}</div>
-                    <div id="date">{props.date}</div>
-                    <div id="description">{props.description}</div>
-                    <div id="link"><a href="{props.link}">Lire l'article</a></div>
-                </div>
+        <div id="basicArticle">
+            <div class="side-left">
+                <div id="tag">{props.tag}</div>
+                <img src={props.image}></img>
             </div>
 
-
-
-        </React.Fragment>
+            <div class="side-right">
+                <h1>{props.title}</h1>
+                <div class="date">{props.date}</div>
+                <div class="description">{props.description}</div>
+                <div class="link"><a href="{props.link}">Lire l'article</a></div>
+            </div>
+        </div>
     )
 }
 
