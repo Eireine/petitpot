@@ -7,8 +7,8 @@ export default {
 }
 
 const article1 = {
-    title: "Petit potam est tout content",
-    image: "/images/img-potam.JPG",
+    title: "Petit BAO est tout content",
+    image: "/images/bao.jpg",
     date: "12 juillet 2020",
     tag: "💙 MUM AND KID",
     link: "#",
@@ -18,7 +18,9 @@ const article1 = {
 
 const article2 = {
     title: "Mon super titre",
-    image: "/images/toto.jpeg",
+    image: "/images/kiwi.jpg",
+    date: "31 décembre 2020",
+    link: "#",
     description: `
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet pulvinar enim. Proin erat lorem, blandit sed fringilla sit amet, eleifend non neque. Maecenas gravida interdum orci quis lacinia. Morbi eget dui laoreet, lobortis ante at, gravida magna. Fusce congue urna eget sodales porttitor. Fusce ullamcorper pellentesque pellentesque. Sed sit amet tristique orci.
 
