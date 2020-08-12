@@ -1,20 +1,19 @@
 import React from 'react'
-import './ArticlePreview.css'
-
+import styles from './ArticlePreview.module.css'
 
 function ArticlePreview(props) {
     return (
-        <div id="basicArticle">
-            <div class="side-left">
-                <div id="tag">{props.tag}</div>
+        <div className={styles.basicArticle}>
+            <div className={styles.sideLeft}>
+                <div className={styles.tag}>{props.tag}</div>
                 <img src={props.image}></img>
             </div>
 
-            <div class="side-right">
+            <div className={styles.sideRight}>
                 <h1>{props.title}</h1>
-                <div class="date">{props.date}</div>
-                <div class="description">{props.description}</div>
-                <div class="link"><a href="{props.link}">Lire l'article</a></div>
+                <div className={styles.date}>{props.date}</div>
+                <div className={styles.description}>{props.description}</div>
+                <div className={styles.link}><a href={props.link}>Lire l'article</a></div>
             </div>
         </div>
     )
