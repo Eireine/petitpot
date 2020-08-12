@@ -34,7 +34,7 @@ img {
     height: 150px;
     padding: 24px;
     opacity: 1;
-    transition: .5s ease; /*transition vers le side-right:hover*/
+    transition: .5s ease;
 }
 
 .side-right:hover {
@@ -77,7 +77,7 @@ h1 {
     letter-spacing: 0.1em;
 }
 
-.link { /*todo : doit s'afficher devant le composant*/
+.link {
     width: 150px;
     height : 25px;
     background-color: white;
