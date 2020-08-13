@@ -2,11 +2,15 @@
     display: flex;
 }
 
-/* Side-left */ 
-
 img {
     width: 200px;
     height: 200px;
+    box-shadow : 0px 4px 4px #E3E3E2;
+}
+
+img.main {
+    width: 320px;
+    height: 320px;
     box-shadow : 0px 4px 4px #E3E3E2;
 }
 
@@ -21,15 +25,30 @@ img {
     margin-top: 190px;
     padding-left: 10px;
     color: #FFFFFF;
-    background-color: #1C475E;
+    background-color: #99ABA4;
     font-family: 'Patrick Hand';
     position : absolute; 
 }
 
-/* Side-right */ 
+.tag.main {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 25px;
+    border-radius: 3px;
+    height : 25px;
+    width: 150px;
+    left: 675px;
+    margin-top: 20px;
+    padding-left: 10px;
+    color: #FFFFFF;
+    background-color: #8FB3BE;
+    font-family: 'Patrick Hand';
+    position : absolute;
+}
 
 .sideRight {
-    border: 1px solid #E3E3E2;
+    border: 1px solid #8FB3BE;
+    border-radius: 0px 5px 5px 0px;
     width : 150px;
     height: 150px;
     padding: 24px;
@@ -37,22 +56,32 @@ img {
     transition: .5s ease;
 }
 
+.sideRight.main {
+    border: 1px solid #8FB3BE;
+    border-radius: 0px 5px 5px 0px;
+    width : 370px;
+    height: 270px;
+    padding: 24px;
+    opacity: 1;
+    transition: .5s ease;
+}
+
 .sideRight:hover {
     opacity: 1;
-    background-color: #8FB3BE;
+    background-color: #8FB3BE; 
 }
 
-.sideRight:hover h1 {
+.sideRight:hover.main {
+    background-color: unset;
+    opacity: 1;
+}
+
+.sideRight:hover:not(.main) h1,
+.sideRight:hover:not(.main) .date,
+.sideRight:hover:not(.main) .description {
     opacity: 0.3;
 }
 
-.sideRight:hover .date {
-    opacity: 0.3;
-}
-
-.sideRight:hover .description {
-    opacity: 0.3;
-}
 
 h1 {
     color : #535857;
@@ -60,6 +89,14 @@ h1 {
     font-size: 12px;
     letter-spacing: 0.1em;
     margin-bottom: 5px;
+}
+
+h1.main {
+    color : #535857;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
 }
 
 .date {
@@ -70,10 +107,25 @@ h1 {
     margin-bottom: 5px;
 }
 
+.date.main {
+    color : #535857;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
 .description {
     color : #535857;
     font-family: 'Patrick Hand';
     font-size: 12px;
+    letter-spacing: 0.1em;
+}
+
+.description.main {
+    color : #535857;
+    font-family: 'Patrick Hand';
+    font-size: 14px;
     letter-spacing: 0.1em;
 }
 
@@ -85,6 +137,15 @@ h1 {
     top : 100px;
 }
 
+.link.main {
+    width: 150px;
+    height : 25px;
+    background-color: #8FB3BE;
+    position : absolute;
+    top : 290px;
+    left: 450px;
+}
+
 .link a {
     font-family: 'Patrick Hand';
     width: 150px;
@@ -94,8 +155,21 @@ h1 {
     font-size: 18px;
 }
 
+.link.main a {
+    font-family: 'Patrick Hand';
+    width: 150px;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
 .sideRight .link {
     display : none; 
+}
+
+.sideRight.main .link {
+    display : flex; 
 }
 
 .sideRight:hover .link {
