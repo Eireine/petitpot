@@ -3,13 +3,16 @@ import styles from './Navbar.module.css'
 
 function Navbar(props) {
     return (
-        <React.Fragment>
-            <div className={styles.logo}></div>
-            <Navbar className={styles.navigation}>{props.navigation}
-                <Nav.Link href="#home">Home</Nav.Link> {/* todo : props*/}
-                <Nav.Link href="#link">Link</Nav.Link> {/* todo : props*/}
-            </Navbar>
-        </React.Fragment> 
-    )
+        <div className={styles.navigationBar}>
+            <ul>{renderNavItems(props.navItems)}</ul>
+        </div>
+    );
+}
 
-export default Navbar {/* todo : rechercher pourquoi c'est en erreur*/}
+function renderNavItems(navItems) {
+    return navItems.map((item) => 
+        <li className={`${styles.navItems}`}>{item.title}</li>
+    );
+}
+
+export default Navbar

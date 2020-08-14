@@ -6,10 +6,14 @@ export default {
     component : Navbar
 }
 
-const Navbar = {
-    image: "/images/bao.jpg", /* todo : logo à insérer*/
-    navigation: "toto", /* todo : revoir la nav*/
+const navbar1 = {
+    navItems: [
+        { title: "ACTIVITÉS", link: "#" },
+        { title: "CUISINE", link: "#" },
+        { title: "KAWAII", link: "#" },
+        { title: "MUM AND KID", link: "#" },
+        { title: "PRENDRE L'AIR", link: "#" },
+    ]
 } 
 
-
-export const BasicNavbar = () => {}  /* todo : faire l'export du composant*/
+export const BasicNavbar = () => <Navbar {...navbar1} />

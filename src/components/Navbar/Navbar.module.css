@@ -1,0 +1,30 @@
+.navigationBar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    height: 60px;
+    width: 600px;
+    background-color: #8FB3BE;
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+
+li,
+li:visited {
+    margin-right: 35px;
+    font-family: 'Patrick Hand';
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color :#498091;
+
+}
+
+li:hover,
+li:active {
+    color :#FFFFFF;
+    text-decoration: underline;
+}
