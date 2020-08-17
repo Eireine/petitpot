@@ -1,8 +1,3 @@
-.navigationBar {
-    display: flex;
-    justify-content: flex-end;
-}
-
 ul {
     height: 60px;
     width: 600px;
@@ -20,7 +15,7 @@ li:visited {
     font-size: 16px;
     letter-spacing: 0.1em;
     color :#498091;
-
+    text-transform: uppercase;
 }
 
 li:hover,

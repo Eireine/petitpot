@@ -8,11 +8,11 @@ export default {
 
 const navbar1 = {
     navItems: [
-        { title: "ACTIVITÉS", link: "#" },
-        { title: "CUISINE", link: "#" },
-        { title: "KAWAII", link: "#" },
-        { title: "MUM AND KID", link: "#" },
-        { title: "PRENDRE L'AIR", link: "#" },
+        { title: "Activités", link: "#" },
+        { title: "Cuisine", link: "#" },
+        { title: "Kawaii", link: "#" },
+        { title: "Mum and kid", link: "#" },
+        { title: "Prendre l'air", link: "#" },
     ]
 } 
 
