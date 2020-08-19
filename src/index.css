@@ -1,3 +1,5 @@
+@import-normalize;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,13 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  --primary-color: #5F7CB3;
+  --secondary-color: #8EA1C4;
+  --grey-color: #535857;
+  --yellow-color: #DEA46E;
+  --red-color: #E37263;
+  --green-color: #93B2A3;
 }

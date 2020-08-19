@@ -7,8 +7,8 @@ export default {
 }
 
 const article1 = {
-    title: "Petit BAO est tout content",
-    image: "/images/bao.jpg",
+    title: "Dumbo et bulles",
+    image: "/images/dumbo.jpg",
     date: "12 juillet 2020",
     tag: "💙 MUM AND KID",
     link: "#",
