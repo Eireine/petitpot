@@ -3,15 +3,15 @@ import styles from './Navbar.module.css'
 
 function Navbar(props) {
     return (
-        <div className={styles.navigationBar}>
-            <ul>{renderNavItems(props.navItems)}</ul>
-        </div>
-    );
+        <ul className={styles.navigationBar}>
+            {renderNavItems(props.navItems)}
+        </ul>
+    )
 }
 
 function renderNavItems(navItems) {
     return navItems.map((item) => 
-        <li className={`${styles.navItems}`}>{item.title}</li>
+        <li className={`${styles.navItem}`}>{item.title}</li>
     );
 }
 

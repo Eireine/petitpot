@@ -1,25 +1,27 @@
-ul {
+.navigationBar {
     height: 60px;
     width: 600px;
-    background-color: #8FB3BE;
+    background-color: var(--primary-color);
     list-style: none;
     display: flex;
     align-items: center;
 
 }
 
-li,
-li:visited {
+.navItem,
+.navItem:visited {
     margin-right: 35px;
     font-family: 'Patrick Hand';
     font-size: 16px;
     letter-spacing: 0.1em;
-    color :#498091;
+    color : var(--secondary-color);
     text-transform: uppercase;
 }
 
-li:hover,
-li:active {
-    color :#FFFFFF;
-    text-decoration: underline;
+.navItem:hover,
+.navItem:active {
+    color : white;
+    /*text-decoration: underline;*/
+    border-bottom: 1px solid white;
+    padding-bottom: 0px;
 }
