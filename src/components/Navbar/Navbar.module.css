@@ -21,7 +21,6 @@
 .navItem:hover,
 .navItem:active {
     color : white;
-    /*text-decoration: underline;*/
     border-bottom: 1px solid white;
     padding-bottom: 0px;
 }

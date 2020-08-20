@@ -10,7 +10,7 @@ function Navbar(props) {
 }
 
 function renderNavItems(navItems) {
-    return navItems.map((item) => 
+    return navItems.map((item) =>
         <li className={`${styles.navItem}`}>{item.title}</li>
     );
 }
