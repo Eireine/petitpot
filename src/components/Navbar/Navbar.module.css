@@ -1,0 +1,26 @@
+.navigationBar {
+    height: 60px;
+    width: 1000px;
+    background-color: var(--primary-color);
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.navItem,
+.navItem:visited {
+    margin: 50px;
+    font-family: 'Patrick Hand';
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color : var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.navItem:hover,
+.navItem:active {
+    color : white;
+    border-bottom: 1px solid white;
+    padding-bottom: 0px;
+}
