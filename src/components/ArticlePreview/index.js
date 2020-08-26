@@ -16,7 +16,7 @@ function ArticlePreview(props) {
         <div className={`${styles.date} ${mainClass}`}>{props.date}</div>
         <div className={`${styles.description} ${mainClass}`}>{props.description}</div>
         <div className={`${styles.link} ${mainClass}`}>
-          <a href={props.link}>Lire l'article</a>
+          <a href={props.link}>Lire l&apos;article</a>
         </div>
       </div>
     </div>
