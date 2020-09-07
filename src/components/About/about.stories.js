@@ -6,10 +6,10 @@ export default {
   component: About
 }
 
-const article1 = {
+const about1 = {
   title: 'A propos ☀️',
-  image: '/images/pokemon.jpg',
+  image: '/images/pokemon2.jpg',
   description: `Maecenas vitae tellus blandit, pellentesque felis non, rutrum ligula. Mauris vulputate consectetur gravida. Class aptent taciti sociosqu ad litora torquent.`
 }
 
-export const basicArticle = () => <About {...article1} />
+export const basicAbout = () => <About {...about1} />
