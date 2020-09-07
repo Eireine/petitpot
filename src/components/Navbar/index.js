@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Navbar.module.css'
 
-function renderNavItems(navItems) {
+const renderNavItems = navItems => {
   return navItems.map((item, idx) => (
     <li key={idx} className={`${styles.navItem}`}>
       {item.title}
@@ -9,8 +9,8 @@ function renderNavItems(navItems) {
   ))
 }
 
-function Navbar(props) {
-  return <ul className={styles.navigationBar}>{renderNavItems(props.navItems)}</ul>
+const Navbar = ({ navItems }) => {
+  return <ul className={styles.navigationBar}>{renderNavItems(navItems)}</ul>
 }
 
 export default Navbar

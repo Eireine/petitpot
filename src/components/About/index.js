@@ -1,13 +1,13 @@
 import React from 'react'
 import styles from './about.module.css'
 
-function About(props) {
+const About = ({ title, image, description }) => {
   return (
     <reactFragment>
-      <h1 className={styles.title}>{props.title} </h1>
+      <h1 className={styles.title}>{title} </h1>
       <div className={styles.about}>
-        <img src={props.image} className={styles.img}></img>
-        <div className={styles.description}>{props.description} </div>
+        <img src={image} className={styles.img} alt="img"></img>
+        <div className={styles.description}>{description} </div>
       </div>
     </reactFragment>
   )

@@ -1,22 +1,22 @@
 import React from 'react'
 import styles from './ArticlePreview.module.css'
 
-function ArticlePreview(props) {
-  const mainClass = props.isMain ? styles.main : ''
+const ArticlePreview = ({ title, image, date, tag, link, description, isMain }) => {
+  const mainClass = isMain ? styles.main : ''
 
   return (
     <div className={styles.basicArticle}>
       <div className={styles.sideLeft}>
-        <div className={`${styles.tag} ${mainClass}`}>{props.tag} </div>
-        <img src={props.image} className={`${styles.img} ${mainClass}`}></img>
+        <div className={`${styles.tag} ${mainClass}`}>{tag} </div>
+        <img src={image} className={`${styles.img} ${mainClass}`} alt="img-article"></img>
       </div>
 
       <div className={`${styles.sideRight} ${mainClass}`}>
-        <h1 className={`${styles.title} ${mainClass} `}>{props.title}</h1>
-        <div className={`${styles.date} ${mainClass}`}>{props.date}</div>
-        <div className={`${styles.description} ${mainClass}`}>{props.description}</div>
+        <h1 className={`${styles.title} ${mainClass} `}>{title}</h1>
+        <div className={`${styles.date} ${mainClass}`}>{date}</div>
+        <div className={`${styles.description} ${mainClass}`}>{description}</div>
         <div className={`${styles.link} ${mainClass}`}>
-          <a href={props.link}>Lire l&apos;article</a>
+          <a href={link}>Lire l&apos;article</a>
         </div>
       </div>
     </div>
