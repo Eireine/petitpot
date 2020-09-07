@@ -2,11 +2,11 @@ import React from 'react'
 import Navbar from '../Navbar'
 import styles from './Header.module.css'
 
-function Header(props) {
+const Header = ({ logo, navItems }) => {
   return (
     <div className={styles.header}>
-      <img src={props.logo} className={styles.logo}></img>
-      <Navbar navItems={props.navItems} />
+      <img src={logo} className={styles.logo} alt="img-article"></img>
+      <Navbar navItems={navItems} />
     </div>
   )
 }
