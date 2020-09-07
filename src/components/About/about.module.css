@@ -1,25 +1,23 @@
 .about {
-    display: flex;
+  display: flex;
 }
 
 .img {
-    width: 107px;
-    height: 160px;
-    margin-right: 20px;
+  width: 107px;
+  height: 160px;
+  margin-right: 10px;
 }
 
 .title {
-    font-family: 'Patrick Hand';
-    font-size: 18px;
-    color: var(--primary-color);
-    text-transform: uppercase;
-
+  font-family: 'Patrick Hand';
+  font-size: 18px;
+  color: var(--primary-color);
+  text-transform: uppercase;
 }
 
 .description {
-    font-family: 'Patrick Hand';
-    font-size: 14px;
-    color: var(--grey-color);
-    width: 130px ;
-
+  font-family: 'Patrick Hand';
+  font-size: 14px;
+  color: var(--grey-color);
+  width: 130px;
 }
